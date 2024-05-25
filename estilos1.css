@@ -1,0 +1,756 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fuentes/Raleway.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fuentes/Montserrat.ttf');
+    font-weight: normal;
+}
+
+/* ----------header-------------- */
+header {
+    background-image: url(imagenes/portada.png);
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+}
+
+.cont-header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+}
+
+.imgheader img {
+    max-width: 100%; /* Asegura que la imagen no desborde su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.atajo {
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-left: 1230px;
+}
+
+.atajo:hover {
+    color: orange;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.section {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow-y: auto;
+    background-image: url(imagenes/fondo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ----------portada-------------- */
+
+.portada {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(imagenes/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: "Raleway";
+    margin-top: 230px;
+    margin-bottom: 30px; 
+}
+
+#parrafo-portada {
+    font-family: "Montserrat";
+    font-size: 26px;
+    color: white;
+    margin-bottom: 60px; 
+}
+
+.boton-comenzar {
+    background-color: #ffb54d;
+    padding: 15px 150px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat";
+    font-size: 26px;
+    transition: background-color 0.3s ease;
+}
+
+
+.boton-comenzar:hover {
+    background-color: #ffb54dd4;
+}
+
+/* ------recompensa----------*/
+
+#titu-recomp{
+    font-family: "Raleway";
+    color: white;
+    margin: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline; 
+    text-decoration-color:  rgb(255, 128, 0);
+    text-decoration-thickness: 5px; 
+}
+
+.calendario {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagen-mobile {
+    display: none; 
+}
+
+.texto-bajo-imagen {
+    font-family: "Arial";
+    text-align: center;
+    margin-top: 500px; 
+    font-size: 3vw;
+    color: white;
+    display: none;
+    line-height: 1.5; 
+    margin: 10px;
+}
+
+
+/*------ recomendados-------*/
+
+#titu-rec {
+    font-family: "Raleway";
+    font-size: 50px;
+    margin: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    text-decoration: underline; 
+    text-decoration-color: rgb(255, 128, 0);
+    text-decoration-thickness: 5px; 
+}
+
+.contenedor-centrado {
+    background-color: white;
+    width: 80%;
+    height: 560px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.imgmobilerec1 {
+    display: none; 
+}
+
+.destacado {
+    position: absolute;
+    font-family: "Raleway";
+    font-weight: bold;
+    left: 20px; 
+    top: 80px; 
+    background-color: orange;
+    padding: 8px;
+    color: black
+}
+
+#parrafo-recom1,
+#parrafo-recom5,
+#parrafo-recom7{
+    position: absolute;
+    font-family: "Montserrat";
+    font-weight: normal;
+    font-size: 28px;
+    left: 20px; 
+    top: 110px; 
+    color: white;
+    text-shadow: #131313;
+
+}
+
+#parrafo-recom2, 
+#parrafo-recom3,
+#parrafo-recom4,
+#parrafo-recom6{
+    position: absolute;
+    font-family: "Montserrat";
+    font-weight: normal;
+    font-size: 18px;
+    left: 20px; 
+    margin-left: 5px;
+    top: 100px; 
+    color: white;
+    text-shadow: #131313;
+
+}
+
+
+.recomendado1 {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
+.recomendado5 {
+    position: absolute; 
+    top: 340px; 
+    left: 0; 
+}
+
+.recomendado2 {
+    position: absolute;
+    margin-left: 45px;
+    top: 0;
+}
+
+.recomendado3 {
+    position: absolute;
+    margin-left: 45px;
+    top: 250x;
+}
+
+.recomendado4 {
+    position: absolute;
+    margin-left: 45px;
+    top: 373px;
+}
+
+.recomendado6 {
+    position: absolute; 
+    top: 0px; 
+    right: 0;
+}
+
+.recomendado7 {
+    position: absolute; 
+    top: 186px; 
+    right: 0;
+}
+
+.recomendado1 img,.recomendado2 img, .recomendado3 img, 
+.recomendado4 img, .recomendado5 img, .recomendado6 img, .recomendado7 img {
+    transition: opacity 0.3s ease;
+}
+
+.recomendado1:hover img, .recomendado2:hover img, .recomendado3:hover img,
+ .recomendado4:hover img, .recomendado5:hover img, .recomendado6:hover img, .recomendado7:hover img {
+    opacity: 0.7; 
+    cursor: pointer;
+}
+
+
+/*----- quienes somos-----------*/
+
+#quienes-somos {
+    background-color: #131313;
+    background-image: url(imagenes/somos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#titu-somos {
+    font-family: "Raleway";
+    margin: 30px;
+    margin-bottom: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 128, 0);
+    text-decoration-thickness: 5px;
+}
+
+.parrafo {
+    font-family: Arial;
+    font-weight: normal;
+    color: white;
+    margin: 30px;
+    font-size: 26px;
+    line-height: 1.5;
+    max-width: 50%;
+    text-align: left;
+}
+
+/* ----------Formulario----------- */
+
+.cont{
+    display: flex;
+    flex-direction: row; 
+    background-image: url(imagenes/imgfondoform.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#formulario {
+    background-color: #131313;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    position: relative; 
+    overflow: hidden;
+}
+
+.mobile-img {
+    display: none; 
+}
+
+.fondo {
+    width: 80%;
+    max-width: 750px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#titu-form {
+    font-family: "Raleway";
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 128, 0);
+    text-decoration-thickness: 5px;
+    
+}
+
+#miFormulario input,
+#miFormulario select {
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    height: 70px;
+    width: 80%; 
+    font-size: 20px;
+    margin: 10px 0; 
+    padding: 0 10px;
+}
+
+.boton-recibir{
+    background-color: #ffb54d;
+    height: 70px;
+    width: 80%;
+    border-radius: 18px;
+    margin-top: 40px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat";
+    font-size: 26px;
+    text-align: center;
+}
+
+
+/* --------Feedback----------- */
+
+.items-mobile {
+    display: none; /* Oculta los textos en forma de lista por defecto */
+}
+
+.feedback {
+    display: none;
+    position: fixed;
+   background-image: url('imagenes/feedb.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+   
+}
+
+.titulofeed {
+    font-family:"Raleway" ;
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 70px;
+}
+
+.parrafo-feedb {
+    font-family: "Montserrat";
+    font-size: 35px;
+    margin-top: 130px;
+}
+
+.ef{
+    font-size: 35px;
+   margin-top: 80px;
+   margin-left: 80px;
+   margin-right: 80px;
+}
+
+.volver{
+    font-family: "Raleway";
+    font-size: 20px;
+    position: fixed; 
+    top: 20px;
+    right: 20px; 
+    color: white;
+    text-decoration: none;
+}
+
+.volver:hover{
+    background-color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.feedmobile{
+    display: none;
+}
+
+.mostrar-feedback {
+    display: block !important;
+}
+
+.oculto { 
+    display: none !important;
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+/* --------Footer------------ */
+
+footer {
+    background-color: #131313;
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.imgfooter img {
+    margin-right: 1230px;
+}
+
+.contenedor-seguinos {
+    flex-direction: row;
+    display: flex;
+    margin-top: 10px;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+.circulo {
+    width: 55px; 
+    height: 55px; 
+    background-color: #d8d8d8; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    overflow: hidden;
+    background-size: 50%; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.circulo:hover{
+    background-color: #ffb54dd4;
+}
+
+.facebook {
+    background-image: url('imagenes/facebook.png'); 
+}
+
+.instagram {
+    background-image: url('imagenes/instagram.png'); 
+}
+
+.youtube {
+    background-image: url('imagenes/youtube.png'); 
+}
+
+
+/* --------Responsive----------- */
+
+@media (max-width: 767px) {
+    /* Ajusta el tamaño del encabezado */
+    header {
+        padding: 5px;
+        flex-direction: row; 
+    }
+
+    .cont-header {
+        flex-direction: row; 
+    }
+
+    .imgheader img {
+        margin-right: 0; 
+        width: 100%; 
+        height: 30px; 
+    }
+    
+    .atajo{
+        margin-left: 150px;
+        font-size: 12px; 
+    }
+
+
+    /* portada */
+    #h1 {
+        font-size: 20px; 
+        margin-top: 250px; 
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
+
+    #parrafo-portada {
+        font-size: 12px; 
+        padding-top: 8px;
+        margin-bottom: 40px; 
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .boton-comenzar {
+        padding: 8px 60px; 
+        font-size: 12px; 
+    }
+
+    /* recompensa */
+
+    #beneficio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #titu-recomp {
+        font-size: 16px;
+        text-decoration-thickness: 2px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 40px;
+    }
+
+    .calendario {
+        display: none;
+    }
+
+    .imagen-mobile {
+        display: block; 
+        margin-top: 20px;
+    }
+
+    .texto-bajo-imagen {
+        font-family: "Arial";
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.5; 
+        display: block; 
+        margin-top: 55px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    /*  recomendados */
+
+    #titu-rec {
+        font-size: 16px;
+        text-decoration-thickness: 2px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .contenedor-centrado  {
+        display: none;
+    }
+
+    .imgmobilerec1 {
+        display: block; 
+        margin-top: 150px;
+        margin-left: 40px; 
+    }
+
+    /* quienes somos */
+
+    #quienes-somos {
+        background-image: url(imagenes/fondo.png);
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: flex-start; 
+        text-align: left; 
+    }
+
+    #titu-somos {
+        font-size: 16px;
+        text-decoration-thickness: 2px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+
+    .parrafo {
+        font-family: "Arial";
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 1.5;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .imgsomos {
+        display: none;
+    }
+
+    /* formulario */
+
+    #formulario {
+        background-image: url(imagenes/fondoform2.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center; 
+    }
+    
+    #miFormulario input,
+    #miFormulario select {
+        width: 90%;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 0px; 
+    }
+    
+    .boton-recibir {
+        width: 100%; 
+        height: 40px; 
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center; 
+    }
+    
+    #titu-form {
+        font-size: 24px; 
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: -50px; 
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+    }
+    
+    .items-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -20px;
+    }
+    
+    .items-mobile p {
+        font-family: "Montserrat";;
+        line-height: 1;
+        font-size: 14px; 
+        color: white;
+    }
+    
+    .item-lista {
+        display: flex;
+        align-items: center;
+    }
+    
+    .item-lista img {
+        width: 20px; 
+        margin-right: 5px;
+    }
+
+
+    /* --formulario--*/
+
+    footer {
+        justify-content: space-between; 
+    }
+    
+    .imgfooter img {
+        width: 80px;
+        height: 30px;
+        margin-right: 160px;
+
+    }
+    
+    .redes .circulo {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .titulofeed p {
+        font-size: 24px;
+        margin-top: 20px; 
+    }
+
+    .parrafo-feedb p {
+        font-size: 18px; 
+        margin-bottom: 20px; 
+    }
+
+    .ef{
+        font-size: 35px;
+        margin-top: 80px;
+        margin-left: 15px; /* Reducir el margen izquierdo */
+        margin-right: 25px; /* Reducir el margen derecho */
+        max-width: 90%; /* Ajustar el ancho máximo */
+    }
+
+    .feedbmobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+}
+

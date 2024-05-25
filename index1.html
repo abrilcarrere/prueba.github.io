@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Cinefilos</title>
+</head>
+<body>
+    <div id="content"> <!-- Envolvemos todo el contenido principal en un div con id "content" -->
+        <!-- encabezado -->
+        <header class="ocultar-en-feedback">
+            <div class="cont-header">
+                <div class="imgheader"><img src="imagenes/logo.png" alt="logo"></div>
+                <a class="atajo" href="#quienes-somos" >NOSOTROS</a>
+            </div>
+        </header>
+
+
+        <!-- portada-->
+        <div class="section portada ocultar-en-feedback">
+            <h1 id="h1">TU PASAPORTE AL MUNDO DEL CINE</h1>
+            <p id="parrafo-portada">Accede al beneficio exclusivo de un calendario mensual con los próximos eventos de la industria.</p>
+            <button class="boton-comenzar" id="boton-loquiero">¡LO QUIERO!</button>
+        </div>
+
+        <!-- beneficio -->
+        <div class="section ocultar-en-feedback" id="beneficio">
+            <h2 id="titu-recomp">¡OBTEN TU CALENDARIO EXCLUSIVO DE ESTRENOS!</h2>
+            <img src="imagenes/calendario.png" alt="benf" class="calendario">
+            <img src="imagenes/calendario-alt.png" alt="benf" class="imagen-mobile">
+            <div class="texto-bajo-imagen">
+                <p>¡Obtén tu calendario personalizado y nunca te pierdas un evento importante en tu región!</p>
+                <p>Desde estrenos y festivales hasta lanzamientos exclusivos, tendrás todas las fechas clave al alcance de tu mano. Aprovecha tu tiempo libre al máximo y disfruta de cada momento especial.</p>
+            </div>
+        </div>
+
+        <!-- recomendados -->
+        <div class="section ocultar-en-feedback" id="recomendados">
+            <h2 id="titu-rec">RECOMENDADOS</h2>
+            <img src="imagenes/recom mobile.jpeg" alt="benf" class="imgmobilerec1">
+            <div class="contenedor-centrado">
+                <div class="recomendado1">
+                    <div class="destacado">DESTACADO</div>
+                    <p id="parrafo-recom1">3 Series nuevas que la están rompiendo en streaming</p>
+                    <img src="imagenes/recom1.png" alt="img">
+                </div>
+                <div class="recomendado2">
+                    <div class="destacado">DESTACADO</div>
+                    <p id="parrafo-recom2">Netflix sumó un joya de Yorgos Lanthimos a su catalogo</p>
+                    <img src="imagenes/recom2.png" alt="img">
+                </div>
+                <div class="recomendado3">
+                    <div class="destacado">DESTACADO</div>
+                    <p id="parrafo-recom3">“The favourite”: La extravagancia de la realeza llego a Netflix</p>
+                    <img src="imagenes/recom3.png" alt="img">
+                </div>
+                <div class="recomendado4">
+                    <div class="destacado">DESTACADO</div>
+                    <p id="parrafo-recom4">“Shoah”: El documental de mas de 9 horas que revela el horror del Holocausto</p>
+                    <img src="imagenes/recom4.png" alt="img">
+                </div>
+                <div class="recomendado5">
+                    <div class="destacado">DESTACADO</div>
+                    <p id="parrafo-recom5">2 películas que tenes que ver si encantó “The Holdovers”</p>
+                    <img src="imagenes/recom5.png" alt="img">
+                </div>
+                <div class="recomendado6">
+                    <div class="destacado">DESTACADO</div>
+                    <p id="parrafo-recom6">La historia detrás de la película más rentable de la historia</p>
+                    <img src="imagenes/recom6.png" alt="img">
+                </div>
+                <div class="recomendado7">
+                    <div class="destacado">DESTACADO</div>
+                    <p id="parrafo-recom7">Llega a streaming la version extendida de Napoleon, de Ridley Scott</p>
+                    <img src="imagenes/recom7.png" alt="img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Quienes somos -->
+        <div class="section ocultar-en-feedback" id="quienes-somos">
+            <h2 id="titu-somos">¿QUIÉNES SOMOS?</h2>
+                <div class="parrafo">
+                    <p>Somos una comunidad de jóvenes unidos por el cine.</p>
+                    <p>Apoyamos el séptimo arte como interlocutor de grandes historias y como el mejor espacio para conocer otras ficciones. Valoramos el trabajo de las personas que hay detrás de cada proyecto y compartimos las ganas de quienes se arriesgan, animan, enfrentan el desafío y hacen.</p>
+                    <p>El cine es el entretenimiento que más nos educó, el arte que más nos enseñó y el medio de transporte que elegimos para conocer otras ficciones.</p>
+                    <p>Juntos logramos crear la comunidad más grande del cine en Latinoamérica reuniendo a más de tres millones de fanáticos de este arte interminable.</p>
+                </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="section cont ocultar-en-feedback" id="formulario">
+            <div class="fondo">
+                <form id="miFormulario">
+                    <h2 id="titu-form">¡Completa con tus datos y recibí nuestro calendario!</h2>
+                    <div class="items-mobile">
+                        <div class="item-lista">
+                            <img src="imagenes/Vector 3.png">
+                            <p>Recibí un calendario cada mes.</p>
+                        </div>
+                        <div class="item-lista">
+                            <img src="imagenes/Vector 3.png" alt="">
+                            <p>Enterate de todos los estrenos.</p>
+                        </div>
+                        <div class="item-lista">
+                            <img src="imagenes/Vector 3.png" alt="">
+                            <p>Enterate de todos los festivales.</p>
+                        </div>
+                    </div>
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <br><br>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <br><br>
+                    <label for="ciudad"></label>
+                    <select name="ciudad" id="ciudad" title="Selecciona tu ciudad">
+                        <option value="">Selecciona tu ciudad</option>
+                        <option value="Buenos Aires">La Plata</option>
+                        <option value="Catamarca">San Fernando del Valle de Catamarca</option>
+                        <option value="Chaco">Resistencia</option>
+                        <option value="Chubut">Rawson</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Paraná</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">San Salvador de Jujuy</option>
+                        <option value="La Pampa">Santa Rosa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Posadas</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Viedma</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Río Gallegos</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Ushuaia</option>
+                        <option value="Tucumán">San Miguel de Tucumán</option>
+                    </select>
+                    <br><br>
+                    <button class="boton-recibir" id="boton-recibir">RECIBIR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="feedback" id="feedback">
+        <div class="volver" id="volver">Volver</div>
+        <div class="titulofeed">
+            <p>¡Gracias por sumarte <span id="nombre-placeholder"></span>!</p>
+        </div>
+        <div class="parrafo-feedb">
+            <p>Podrás descargar tu calendario en <span id="email-placeholder"></span>.</p>
+        </div>
+        <div class="parrafo-feedb ef">
+            <p>Desde Cinefilos esperamos que disfrutes mucho de los estrenos, festivales y eventos de este año y que nuestro calendario te sea útil para organizar tu tiempo y recorrer todo el mundo del séptimo arte.</p>
+        </div>
+        <img class="feedbmobile" src="imagenes/feedbmobile.jpg" alt="feedb">
+    </section>
+    
+
+    <!--footer-->
+    <footer class="ocultar-en-feedback">
+        <div class="contenedor-seguinos">
+            <div class="imgfooter"><img src="imagenes/logo.png" alt="logo"></div>
+            <div class="redes">
+        <a href="https://www.facebook.com/cinefilooos">
+            <div class="circulo facebook"></div>
+        </a>
+        <a href=https://www.instagram.com/cinefilosoficial/>
+            <div class="circulo instagram"></div>
+        </a>
+        <a href=https://www.youtube.com/channel/UC08kA7iu9PEzDxkMf6_33Pw>
+            <div class="circulo youtube"></div>
+        </a>
+    </div>
+        </div>
+    </footer>
+    
+
+    <script src="script8.js"></script>
+</body>
+</html>
+
